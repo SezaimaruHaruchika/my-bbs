@@ -2,7 +2,7 @@
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "my-bbs",
   "main": "src/index.ts",
-  "compatibility_date": "2025-07-23"
+  "compatibility_date": "2025-07-23",
   // "compatibility_flags": [
   //   "nodejs_compat"
   // ],
@@ -21,13 +21,13 @@
   //     "bucket_name": "my-bucket"
   //   }
   // ],
-  // "d1_databases": [
-  //   {
-  //     "binding": "MY_DB",
-  //     "database_name": "my-database",
-  //     "database_id": ""
-  //   }
-  // ],
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "bbs-db",
+      "database_id": "634b8b51-b8c9-4e08-a567-9cebc3aaf926"
+    }
+  ]
   // "ai": {
   //   "binding": "AI"
   // },

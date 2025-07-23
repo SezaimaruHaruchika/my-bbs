@@ -9,6 +9,12 @@
       "ESNext"
     ],
     "jsx": "react-jsx",
-    "jsxImportSource": "hono/jsx"
+    "jsxImportSource": "hono/jsx",
+    "types": ["@cloudflare/workers-types"],
+    "baseUrl": ".",
+    "paths": {
+      "@prisma/client": ["./src/generated/prisma"],
+      "@prisma/client/default": ["./src/generated/prisma/default.js"]
+    }
   },
 }
